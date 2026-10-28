@@ -299,7 +299,7 @@ The fact processing stage handles order data with two notebooks: one for the ini
 
 The `4_Dashboard_Insights/` folder contains five dashboard screenshot PNG files that capture analytics visualizations built from the gold-layer tables. These screenshots represent the BI outputs of the pipeline, showcasing insights derived from the consolidated parent-child data model.
 
-### Dashboard 1 — `Screenshot 2026-10-28 135604.png` (1566×620)
+### Dashboard 1 — `4_Dashboard_Insights/Screenshot 2026-10-28 135604.png` (1566×620)
 
 **Type:** Data table dashboard with summary chart
 
@@ -307,7 +307,7 @@ The `4_Dashboard_Insights/` folder contains five dashboard screenshot PNG files 
 
 **Likely data source:** `fmcg.gold.fact_orders` joined with dimension tables, or `fmcg.gold.sb_fact_orders` detail view.
 
-### Dashboard 2 — `Screenshot 2026-10-28 135636.png` (1568×444)
+### Dashboard 2 — `4_Dashboard_Insights/Screenshot 2026-10-28 135636.png` (1568×444)
 
 **Type:** Multi-widget dashboard with bar charts and KPI indicators
 
@@ -315,7 +315,7 @@ The `4_Dashboard_Insights/` folder contains five dashboard screenshot PNG files 
 
 **Likely data source:** `fmcg.gold.fact_orders` aggregated by product or customer dimension.
 
-### Dashboard 3 — `Screenshot 2026-10-28 135654.png` (1595×447)
+### Dashboard 3 — `4_Dashboard_Insights/Screenshot 2026-10-28 135654.png` (1595×447)
 
 **Type:** Dual-series bar chart (left-aligned)
 
@@ -323,7 +323,7 @@ The `4_Dashboard_Insights/` folder contains five dashboard screenshot PNG files 
 
 **Likely data source:** `fmcg.gold.fact_orders` aggregated by month, compared across two years (2024 vs 2025) or across two product divisions.
 
-### Dashboard 4 — `Screenshot 2026-10-28 135711.png` (1551×439)
+### Dashboard 4 — `4_Dashboard_Insights/Screenshot 2026-10-28 135711.png` (1551×439) 
 
 **Type:** Multi-widget dashboard with table and small charts
 
@@ -331,7 +331,7 @@ The `4_Dashboard_Insights/` folder contains five dashboard screenshot PNG files 
 
 **Likely data source:** Combination of `fmcg.gold.dim_products`, `fmcg.gold.dim_customers`, and `fmcg.gold.fact_orders` for a multi-dimensional summary view.
 
-### Dashboard 5 — `Screenshot 2026-10-28 135737.png` (1553×424)
+### Dashboard 5 — `4_Dashboard_Insights/Screenshot 2026-10-28 135737.png` (1553×424)
 
 **Type:** Multi-bar-chart dashboard with dominant blue series
 
