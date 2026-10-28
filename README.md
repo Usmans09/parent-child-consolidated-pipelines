@@ -297,47 +297,71 @@ The fact processing stage handles order data with two notebooks: one for the ini
 
 ### Stage 4: Dashboard Insights
 
-The `4_Dashboard_Insights/` folder contains five dashboard screenshot PNG files that capture analytics visualizations built from the gold-layer tables. These screenshots represent the BI outputs of the pipeline, showcasing insights derived from the consolidated parent-child data model.
+The `4_Dashboard_Insights/` folder contains five dashboard screenshots showcasing analytics visualizations built from the Gold-layer tables. These screenshots represent the BI outputs of the pipeline, highlighting insights derived from the consolidated parent-child data model.
 
-### Dashboard 1 — `4_Dashboard_Insights/Screenshot 2026-10-28 135604.png` (1566×620)
+### Dashboard 1
+
+![Dashboard 1](<4_Dashboard_Insights/Screenshot 2026-10-28 135604.png>)
 
 **Type:** Data table dashboard with summary chart
 
-**Description:** This screenshot shows a Databricks SQL dashboard with a prominent data table occupying the upper two-thirds of the view. The table displays detailed records with multiple columns and approximately 25+ rows of data, likely showing order-level or customer-level transactional data from the gold layer. A centered dashboard title is visible at the top. The lower portion contains a small chart widget with colored bars (blue, orange, green, red), possibly representing a summary aggregation or distribution of the table data above.
+**Description:** This dashboard displays detailed records from the Gold layer alongside a summary chart.
 
-**Likely data source:** `fmcg.gold.fact_orders` joined with dimension tables, or `fmcg.gold.sb_fact_orders` detail view.
+**Likely data source:** `fmcg.gold.fact_orders` or `fmcg.gold.sb_fact_orders`.
 
-### Dashboard 2 — `4_Dashboard_Insights/Screenshot 2026-10-28 135636.png` (1568×444)
+---
+
+### Dashboard 2
+
+![Dashboard 2](<4_Dashboard_Insights/Screenshot 2026-10-28 135636.png>)
 
 **Type:** Multi-widget dashboard with bar charts and KPI indicators
 
-**Description:** This screenshot displays a dashboard layout with multiple chart widgets distributed across the canvas. The analysis detects colored vertical bars (including red highlights) spread across the middle and lower sections, indicating at least two bar chart visualizations. Text labels are present in the header area and alongside the charts, suggesting widget titles and axis labels. The red-colored bars may highlight a specific metric or alert-level threshold, such as high-value orders or top-performing products.
+**Description:** This dashboard presents multiple visualizations for analyzing sales performance, products, customers, and business metrics.
 
-**Likely data source:** `fmcg.gold.fact_orders` aggregated by product or customer dimension.
+**Likely data source:** `fmcg.gold.fact_orders` aggregated by product or customer dimensions.
 
-### Dashboard 3 — `4_Dashboard_Insights/Screenshot 2026-10-28 135654.png` (1595×447)
+---
 
-**Type:** Dual-series bar chart (left-aligned)
+### Dashboard 3
 
-**Description:** This screenshot features a large bar chart occupying the left half of the dashboard. The chart displays two data series represented by blue and orange bars, suggesting a comparison between two metrics or two time periods. The bars are densely packed (50+ bars detected per row segment), indicating a detailed breakdown — possibly monthly sales quantity or revenue across products. The right portion of the dashboard is mostly empty, with a small text/legend area at the bottom. A widget title is visible at the top.
+![Dashboard 3](<4_Dashboard_Insights/Screenshot 2026-10-28 135654.png>)
 
-**Likely data source:** `fmcg.gold.fact_orders` aggregated by month, compared across two years (2024 vs 2025) or across two product divisions.
+**Type:** Dual-series bar chart
 
-### Dashboard 4 — `4_Dashboard_Insights/Screenshot 2026-10-28 135711.png` (1551×439) 
+**Description:** This dashboard compares two data series to help analyze sales quantities, revenue, or performance across categories or time periods.
 
-**Type:** Multi-widget dashboard with table and small charts
+**Likely data source:** Aggregated data from `fmcg.gold.fact_orders`.
 
-**Description:** This screenshot shows a dashboard with multiple widgets of varying sizes. The upper section contains text-heavy areas with several horizontal text bands, likely widget titles and filter descriptions. The middle section spans the full width with 30%+ pixel density, suggesting a wide table or data grid. The lower-right section contains small bar chart widgets (4–6 bars each), potentially showing top-N rankings or category breakdowns. The overall layout suggests a summary dashboard with both tabular detail and visual summaries.
+---
 
-**Likely data source:** Combination of `fmcg.gold.dim_products`, `fmcg.gold.dim_customers`, and `fmcg.gold.fact_orders` for a multi-dimensional summary view.
+### Dashboard 4
 
-### Dashboard 5 — `4_Dashboard_Insights/Screenshot 2026-10-28 135737.png` (1553×424)
+![Dashboard 4](<4_Dashboard_Insights/Screenshot 2026-10-28 135711.png>)
 
-**Type:** Multi-bar-chart dashboard with dominant blue series
+**Type:** Multi-widget dashboard with tables and charts
 
-**Description:** This screenshot displays the most chart-heavy dashboard, with multiple bar chart widgets densely packed across the middle and lower sections. The dominant color is blue, with 60–100+ vertical bars detected per chart region, indicating detailed categorical breakdowns. A table-like structure (16 rows) is also detected in the lower-center area, suggesting a data table alongside the charts. The heavy bar density and blue dominance suggest these charts show sales quantity or order volume distributions across products, customers, or time periods. Text labels are present at the top and along the bottom axis.
+**Description:** This dashboard combines tabular information and chart visualizations to support analysis of products, customers, and orders.
 
-**Likely data source:** `fmcg.gold.fact_orders` aggregated by product code and/or customer code, showing sold quantity distributions.
+**Likely data source:** `fmcg.gold.dim_products`, `fmcg.gold.dim_customers`, and `fmcg.gold.fact_orders`.
+
+---
+
+### Dashboard 5
+
+![Dashboard 5](<4_Dashboard_Insights/Screenshot 2026-10-28 135737.png>)
+
+**Type:** Multi-bar-chart dashboard
+
+**Description:** This dashboard presents multiple chart visualizations for exploring order volumes, sales quantities, and category-level distributions.
+
+**Likely data source:** Aggregated data from `fmcg.gold.fact_orders`, potentially grouped by product or customer.
+
+---
+
+### Dashboard Summary
+
+These dashboards represent the Business Intelligence (BI) layer of the project, transforming Gold-layer data into visual reports that help users explore transactional data, compare performance, and identify business trends.
 
 ### Dashboard Summary
 
